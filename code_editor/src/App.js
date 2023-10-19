@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect, useState } from "react";
+import webFont from "webfontloader";
+import "./App.css"
+import Editor from "./components/Editor/Editor";
 function App() {
+  // use state for handling code for html css js
+  const [htmlCode, setHtmlCode] = useState("");
+  const [cssCode, setCssCode] = useState("");
+  const [jsCode, setJsCode] = useState("");
+  useEffect(() => {
+    webFont.load({
+      google: {
+        families: ["Roboto", "sans-serif", "chilanka"]
+      }
+    })
+  }, []);
+
+  //lets codelogin of complile code
+  const handleCodeOutput = (e) => {
+
+    const iframe = document.getElementById("output");
+    iframe.contentDocument.body.innerHTML = htmlCode + "<style>" + cssCode + "</style>";
+    iframe.contentWindow.eval(jsCode);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Editor />
+    </>
   );
 }
 
