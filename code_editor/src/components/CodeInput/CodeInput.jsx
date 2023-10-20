@@ -82,7 +82,7 @@ const CodeInput = () => {
 
             </textarea>
             {/* for css */}
-            <div className={styles.editorHeader}><label >HTML</label> <Button title={"CopyCode"} onClick={handleCssCopy} /> <input type="text" id="fileName" ref={fileRef} placeholder="Enter File Name" /><Button title={"Save"} onClick={handleCssFileSave} /> </div>
+            <div className={styles.editorHeader}><label >CSS</label> <Button title={"CopyCode"} onClick={handleCssCopy} /> <input type="text" id="fileName" ref={fileRef} placeholder="Enter File Name" /><Button title={"Save"} onClick={handleCssFileSave} /> </div>
             <textarea name="css" ref={cssRef} onChange={(e) => {
                 let value = e.target.value;
                 handleCssCode(value)
@@ -90,7 +90,7 @@ const CodeInput = () => {
 
             </textarea>
             {/* for javascript */}
-            <div className={styles.editorHeader}><label >HTML</label> <Button title={"CopyCode"} onClick={handleJsCopy} /><input type="text" id="fileName" ref={fileRef} placeholder="Enter File Name" /><Button title={"Save"} onClick={handleJsFileSave} /> </div>
+            <div className={styles.editorHeader}><label >JavaScript</label> <Button title={"CopyCode"} onClick={handleJsCopy} /><input type="text" id="fileName" ref={fileRef} placeholder="Enter File Name" /><Button title={"Save"} onClick={handleJsFileSave} /> </div>
             <textarea name="javascript" ref={jsRef} onChange={(e) => {
                 let value = e.target.value;
                 handleJsCode(value)
