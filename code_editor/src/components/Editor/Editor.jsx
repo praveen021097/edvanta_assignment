@@ -1,13 +1,13 @@
 import React from 'react'
-import CodeInput from './CodeInput'
-import Output from './Output'
+import CodeInput from "../CodeInput/CodeInput"
+import Output from "../CodeOutput/Output"
 import styles from "./Editor.module.css";
 
 const Editor = () => {
 
   return (
     <div className={styles.Editor}>
-       <CodeInput />
+      <CodeInput />
        <Output />
       </div>
   )

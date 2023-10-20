@@ -32,3 +32,22 @@
   .right button:hover{
     background: rgba(234, 4, 4, 0.773);
   }
+
+  @media screen and (max-width: 480px) {
+    
+    .right{
+      width: 100%;
+    }
+    
+  }
+  @media screen and (max-width: 798px) {
+   
+
+    .right{
+      width: 100%;
+    }
+    .right iframe{
+      height: 50vh;
+    }
+    
+  }

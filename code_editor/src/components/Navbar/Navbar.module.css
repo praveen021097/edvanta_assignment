@@ -1,0 +1,17 @@
+.nav{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    background-color: rgba(25, 23, 23, 0.525);
+}
+
+.h2{
+    font-size: 2.5rem;
+    color: white;
+   background: -webkit-linear-gradient(wheat, white, teal);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-left: 20px;
+
+    
+}

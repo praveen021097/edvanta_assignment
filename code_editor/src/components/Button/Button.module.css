@@ -1,0 +1,10 @@
+.Button{
+    padding: 5px 10px;
+    background-color: rgba(41, 41, 229, 0.706);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.Button.hover{
+    background-color: rgba(229, 138, 138, 0.791);
+}

@@ -3,7 +3,19 @@
     height: 100vh;
     padding: 20px ;
     display: flex;
+    flex-direction: row;
   }
 
   
-
+@media screen and (max-width: 480px) {
+  .Editor{
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width: 798px) {
+  .Editor{
+    flex-direction: column;
+  }
+  
+}
