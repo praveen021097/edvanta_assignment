@@ -11,4 +11,4 @@ deployed on netify:-
 https://edvanta-assignment.vercel.app/
 
 ## Screenshots
-![alt text](https://github.com/praveen021097/edvanta_assignment/blob/main/homepage.png)
+![homepage]("code_editor/screenshots/homepage.png?raw=true")
